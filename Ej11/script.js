@@ -2,17 +2,11 @@
 // String Ejemplo: “Guia de JavaScript”
 // Resultado esperado : “JavaScript”
 
-console.log(palabraMasLarga())
-
-function palabraMasLarga(){
-    let frase = prompt("Ingrese una frase").split(' ');
-    let palabraLarga = '';
-
-    for (let palabra of frase) {
-        if(palabra.length > palabraLarga.length){
-            palabraLarga=palabra;
-        }
+let palabraMasLarga = "";
+let palabra = prompt("Ingrese una frase: ").split(' ').map(function (elemento){
+   
+    if (elemento.length>plarga.length) {
+        palabraMasLarga = elemento;
     }
-    
-    return palabraLarga;
-}
+});
+console.log(palabraMasLarga);

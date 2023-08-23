@@ -8,5 +8,6 @@ const persona = {
     peso: 65.0,
     altura: 1.65,
 }
-persona.ciudad='Quito';
-console.log(persona);
+
+const mostrar = JSON.stringify(persona); //paso un objeto a JSON y lo mando lo transformo en string com stringify
+console.log(mostrar);
